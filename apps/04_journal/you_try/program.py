@@ -1,5 +1,6 @@
 import journal
 
+
 def main():
     print_header()
     run_event_loop()
@@ -15,7 +16,7 @@ def run_event_loop():
     print('What do you want to do with your journal?')
     cmd = 'EMPTY'
     journal_name = 'default'
-    journal_data = journal.load(journal_name) # []  # list()
+    journal_data = journal.load(journal_name)  # []  # list()
 
     while cmd != 'x' and cmd:
         cmd = input('[L]ist entries, [A]dd an entry, E[x]it: ').lower().strip()

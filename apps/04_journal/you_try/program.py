@@ -43,5 +43,8 @@ def add_entry(data):
     text = input('Type your entry, <enter> to exit: ')
     journal.add_entry(text, data)
 
+print("__file__" + __file__)
+print("__name__" + __name__)
 
-main()
+if __name__ == '__main__':
+    main()

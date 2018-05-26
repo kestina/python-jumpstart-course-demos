@@ -30,7 +30,8 @@ def run_event_loop():
 
 def list_entries(data):
     print('Your journal entries: ')
-    for entry in data:
+    entries = reversed(data)
+    for entry in entries:
         print(entry)
 
 
